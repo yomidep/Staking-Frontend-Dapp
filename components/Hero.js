@@ -17,11 +17,11 @@ const Hero = () => {
         <div className="w-full md:w-1/2 p-4">
           <div className="bg-white p-4">
             <h2 className="text-extra-large font-bold">
-              Earn <span className="text-[#6837cf]">$HappyPepe</span> Staking
+              Earn <span className="text-[#6837cf]">$PowerArk</span> Staking
               Rewards ✈️
             </h2>
             <p className="my-2 text-normal mt-4">
-              Stake your $BoredPepe tokens and earn rewards! Empowering the
+              Stake your $PowerArk tokens and earn rewards! Empowering the
               Future with Sharded PoS Blockchain
             </p>
             <button

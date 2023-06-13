@@ -2,7 +2,7 @@ import React, { useState } from "react";
 // imported the ethers libary i would be using
 import { ethers } from "ethers";
 import Image from 'next/image';
-import OphirLogo from "./assets/ophir-remove.png";
+import PowerArk from "./assets/ARKADEPP.jpg";
 
 // created a navbar components
 const Navbar = () => {
@@ -56,7 +56,7 @@ const Navbar = () => {
     <nav className="flex justify-between items-center py-4 px-8 bg-[#333333] text-white">
        <div>
       <a className="hover:text-gray-300 cursor-pointer">
-        <Image src={OphirLogo} alt="VoteBlock logo" width={150} height={50} />
+        <Image src={PowerArk} alt="VoteBlock logo" width={150} height={50} />
       </a>
     </div>
 

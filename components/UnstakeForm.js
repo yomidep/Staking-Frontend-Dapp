@@ -25,7 +25,7 @@ const UnstakeForm = () => {
   };
 
   // store staking addresss
-  const stakingContractAddress = "0x2EAab956079E8CD97947C2d39A47D5374c83DF6B";
+  const stakingContractAddress = "0x5a75863d73904E9a0680cDB40B6E002EFb8af9D8";
 
   // write a function to withdraw the stakedBalance
   async function getStakedBalance() {
@@ -83,7 +83,7 @@ const UnstakeForm = () => {
       <div className="w-full md:w-1/2">
         <form className="bg-white rounded px-4 md:px-8 pt-6 pb-8 mb-4 shadow-md mx-2 md:mx-auto">
           <h2 className="text-extra-large font-bold my-4 text-center">
-            Stake <span className="text-[#6837cf] mt-4">$BoredPepe</span>
+            Stake <span className="text-[#6837cf] mt-4">$PowerArk</span>
           </h2>
           <div className="mb-4">
             <label
@@ -92,12 +92,12 @@ const UnstakeForm = () => {
             >
               Enter Amount To Unstake:
             </label>
-            <span className="text-gray-500">{stakedBalance} $BoredPepe</span>
+            <span className="text-gray-500">{stakedBalance} $PowerArk</span>
             <input
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mt-2"
               id="amount"
               type="number"
-              placeholder="Enter amount to Unstake ($BoredPepe)"
+              placeholder="Enter amount to Unstake ($PowerArk)"
               onChange={handleAmount}
             />
           </div>
