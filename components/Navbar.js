@@ -51,7 +51,7 @@ const Navbar = () => {
     }
   };
 
-
+  // CHANGE THE NAVABR 
   return (
     <nav className="flex justify-between items-center py-4 px-8 bg-[#333333] text-white">
        <div>
