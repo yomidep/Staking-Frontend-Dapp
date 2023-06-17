@@ -56,13 +56,13 @@ const Navbar = () => {
     <nav className="flex justify-between items-center py-4 px-8 bg-[#333333] text-white">
        <div>
       <a className="hover:text-gray-300 cursor-pointer">
-        <Image src={PowerArk} alt="VoteBlock logo" width={150} height={50} />
+        <Image src={PowerArk} alt="VoteBlock logo" width={100} height={50} />
       </a>
     </div>
 
       <div>
         <button
-          className="bg-[#333333] text-gray-300 py-2 px-4 rounded-half border-gray-500 border-2"
+          className="bg-[#028090] border-none rounded-full text-gray-300 py-2 px-4 rounded-half border-gray-500 border-2"
           onClick={handleConnectMetamask}
         >
           { connected ? address : "Connect Wallet"}

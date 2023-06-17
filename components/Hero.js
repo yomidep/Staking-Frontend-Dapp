@@ -1,5 +1,8 @@
 import React, { useRef } from "react";
 import MainForm from "./MainForm";
+import { FaLock, FaPhone ,FaChartLine } from 'react-icons/fa';
+
+
 
 const Hero = () => {
   // create a reference for the form elements
@@ -12,6 +15,7 @@ const Hero = () => {
   };
 
   return (
+    // THE FIRST HERO SECTION
     <div className="container mx-auto">
       <div className="flex flex-wrap mt-8">
         <div className="w-full md:w-1/2 p-4">
@@ -20,36 +24,26 @@ const Hero = () => {
               Earn <span className="text-[#6837cf]">$PowerArk</span> Staking
               Rewards ✈️
             </h2>
-            <p className="my-2 text-normal mt-4">
+            <p className="my-2 text-normal mt-4 text-[#191D32]">
               Stake your $PowerArk tokens and earn rewards! Empowering the
               Future with Sharded PoS Blockchain
             </p>
             <button
-              className="bg-[#6837cf] text-gray-300 px-4 py-2 mt-4"
+              className="bg-[#6837cf] rounded-full text-gray-300 px-5 py-2 mt-4"
               onClick={handleStakeNowClick}
             >
               Stake Now
             </button>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-32">
-              <div className="bg-gray-100 text-center p-4">
-                <h4 className="text-normal">Market Cap</h4>
-                <h4 className="text-medium mt-2">$28.32M</h4>
-              </div>
-              <div className="bg-gray-100 text-center p-4">
-                <h4 className="text-normal">Stake Rate</h4>
-                <h4 className="text-medium mt-2">45.69%</h4>
-              </div>
-              <div className="bg-gray-100 text-center p-4">
-                <h4 className="text-normal">Normall Yield</h4>
-                <h4 className="text-medium mt-2">10.16%</h4>
-              </div>
-            </div>
           </div>
         </div>
-        <div className="w-full md:w-1/2 p-4">
+      </div>
+
+      {/* REWARDS SECTION */}
+
+      <div className="w-full md:w-1/2 p-4">
           <div className="bg-white p-4">
-            <h2 className="text-medium font-bold my-2 w-max border-b-2 border-black">
-              Stake Info
+            <h2 className="text-medium font-bold my-2 w-max">
+              STAKE INFO
             </h2>
             <div className="grid grid-cols-2 gap-4 mt-4">
               <div className="text-center">
@@ -77,13 +71,19 @@ const Hero = () => {
                 </div>
               </div>
             </div>
-            <div className="mt-12">
+           
+          </div>
+        </div>
+
+      {/* WHY STAKW WITH US SECTION */}
+      <div className="mt-12 px-4 w-full">
               <div className="py-8">
-                <h2 className="text-medium font-bold mb-6">
+                <h2 className="text-medium text-center font-bold mb-6">
                   Why Stake with Us?
                 </h2>
                 <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                   <li className="bg-white p-4 rounded shadow">
+                    <FaChartLine size={34} />
                     <h3 className="text-xl font-bold mb-2">High Yield</h3>
                     <p>
                       Earn attractive staking rewards, with competitive rates
@@ -91,7 +91,8 @@ const Hero = () => {
                     </p>
                   </li>
                   <li className="bg-white p-4 rounded shadow">
-                    <h3 className="text-xl font-bold mb-2">
+                    <FaLock size={34}/>
+                    <h3 className="text-xl font-bold mb-2" >
                       Secure and Trustworthy
                     </h3>
                     <p>
@@ -100,6 +101,7 @@ const Hero = () => {
                     </p>
                   </li>
                   <li className="bg-white p-4 rounded shadow">
+
                     <h3 className="text-xl font-bold mb-2">Flexibility</h3>
                     <p>
                       Stake your tokens for the desired duration and enjoy the
@@ -110,9 +112,25 @@ const Hero = () => {
                 </ul>
               </div>
             </div>
-          </div>
+
+      {/* MARKET,STAKE,YIELD SECTION */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-32">
+              <div className="bg-gray-100 text-center p-4">
+                <h4 className="text-normal">Market Cap</h4>
+                <h4 className="text-medium mt-2">$28.32M</h4>
+              </div>
+              <div className="bg-gray-100 text-center p-4">
+                <h4 className="text-normal">Stake Rate</h4>
+                <h4 className="text-medium mt-2">45.69%</h4>
+              </div>
+              <div className="bg-gray-100 text-center p-4">
+                <h4 className="text-normal">Normal Yield</h4>
+                <h4 className="text-medium mt-2">10.16%</h4>
+              </div>
         </div>
-      </div>
+
+
+      {/* STAKE FORM */}
       <div className="mt-8" ref={stakingFormRef}>
         <MainForm />
       </div>
